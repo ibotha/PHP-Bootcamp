@@ -1,0 +1,182 @@
+body
+{
+	background-color: rgb(60, 60, 60);
+}
+
+.block
+{
+	background-color: rgb(145, 145, 145);
+	padding: 0.5%;
+	box-shadow: 15px 15px 20px;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+#headerbar
+{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 20px;
+	height: 10%;
+	display: flex;
+	flex-direction: row;
+}
+
+#doft{width: 40%;}
+
+#middiv{margin-left: 58%;overflow: hidden;}
+
+#arrow {display: inline}
+
+#mag
+{
+	height: 12%;
+	width: 15%;
+	position: absolute;
+	left: 73%;
+	right: 0px;
+}
+
+#reload{height: 18%;}
+
+#close{height: 18%;margin-top: 6vh;}
+
+#rightdiv{overflow: hidden;}
+
+#midbar
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#actions
+{
+	width: 7%;
+	height: 40vh;
+	margin-left: 12%;
+	margin-right: 1.5%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: auto;
+}
+
+#view
+{
+	margin-left: auto;
+	margin-right: auto; 
+	height: 60vh;
+	margin-bottom: 15vh;
+}
+
+#right
+{
+	width: 7%;
+	height: 40vh;
+	margin-right: 12%;
+	margin-left: 1.5%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: auto;
+}
+
+#cluster
+{
+	width: 100%;
+	height: 100%;
+}
+
+#actions > a
+{
+	width: 50px;
+	margin: auto;
+}
+
+#actions > a > img
+{
+	width: 50px;
+	margin: auto;
+}
+
+#right > img
+{
+	width: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#eye
+{
+	border-radius: 5px;
+	border: 4px solid red;
+}
+
+#bricks
+{
+	height: 15%;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("resources/brick.jpg");
+}
+
+#popup
+{
+	top: 65%;
+	left: 10%;
+	position: absolute;
+	background-color: lightgreen;
+}
+
+#respond
+{
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: row;
+	width: 430px;
+}
+
+#respondbar
+{
+	width: 340px;
+}
+
+#rsvp
+{
+	margin: 2px;
+}
+
+#chair
+{
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	width: 7%;
+	height: 25%;
+}
+
+#mac
+{
+	position: absolute;
+	top: 49%;
+	left: 66%;
+	width: 13%;
+	height: 16%;
+}
+
+#goaway
+{
+	position: absolute;
+	top: 39%;
+	left: 20%;
+	width: 6%;
+	height: 30%;
+}
+
+#speak
+{
+	top: 45%;
+	left: 20%;
+	position: absolute;
+	background-color: white;
+	display: none;
+}
