@@ -1,0 +1,1 @@
+a:7:{s:11:"Electronics";s:11:"Electronics";s:7:"Fashion";s:7:"Fashion";s:8:"Outdoors";s:8:"Outdoors";s:5:"Sport";s:5:"Sport";s:3:"Art";s:3:"Art";s:11:"Video_Games";s:11:"Video_Games";s:4:"Cars";s:4:"Cars";}
