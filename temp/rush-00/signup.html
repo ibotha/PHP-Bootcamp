@@ -1,0 +1,15 @@
+<h3 style="text-align: center; margin-top: 40px;">Sign Up</h3>
+<h3 style="text-align: center; margin-top: 40px;"><?php echo $errstr ?></h3>
+<div id="readout" style="margin: auto">
+	<?php
+		if ($_SESSION["login"])
+			echo "Logged in";
+		else
+			echo '<form method="post" action="./index.php">
+					Login: <input name="login">
+					Password: <input type="password" name="passwd">
+					<button type="submit" name="submit" value="OK">Ok</button>
+					Yes/No: Are You A Robot?<input class="readoutelem" name="rob">
+				</form>';
+	?>
+</div>

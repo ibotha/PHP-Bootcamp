@@ -1,0 +1,252 @@
+body
+{
+	margin: 0px;
+}
+
+#SearchArea
+{
+	width: 40vw;
+	height: 20;
+}
+#HeaderBar
+{
+	width: 100%;
+	padding: 3px;
+	background-color: rgba(20%, 20%, 20%, 80%);
+	display: flex;
+	flex-direction: row;
+}
+
+#searchform
+{
+	margin-right: auto;
+}
+
+#readout > form
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.readoutelem
+{
+	height: 20px;
+	margin-right: 5px;
+}
+
+.ico
+{
+	width: 50px;
+	height: 50px;
+}
+
+#user_buttons
+{
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	color: white;
+	font-style: bold;
+}
+
+img
+{
+	border: 3px solid black;
+}
+
+#icon
+{
+	display: flex;
+	flex-direction: row;
+	margin-right: 10px;
+}
+
+#Name
+{
+	position: relative;
+	color: white;
+	padding-right: 10px;
+}
+
+#Logo
+{
+	height: 20px;
+	width: 20px;
+}
+
+#Menu
+{
+	width: 30px;
+	height: 30px;
+	border-right: 1px solid black;
+	background-color: rgba(20%, 20%, 20%, 80%);
+	display: flex;
+	flex-direction: column;
+}
+
+#Top
+{
+	width: 100%;
+	height: 30px;
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	z-index: 2;
+}
+
+.Bar
+{
+	width: 20px;
+	height: 4px;
+	margin: auto;
+	border-radius: 5px;
+	background-color: white;
+}
+
+#SideBar
+{
+	width: 10%;
+	min-width: 100px;
+	position: fixed;
+	top: 30px;
+	height: 100%;
+	background-color: rgba(20%, 20%, 20%, 80%);
+	flex-direction: column;
+	z-index: 1;
+}
+
+.SideBarItem
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 0px;
+	width: 100%;
+	color: white;
+	font-size: 20px;
+	font-style: bold;
+	text-align: center;
+	background-color: rgba(20%, 20%, 20%, 0%);
+}
+
+#Feed
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100vh;
+	background-image: url("https://xinchaohotel.com/wp-content/uploads/2017/06/pattern-background-1600-1000-home-blue-pattern-background-1600-1000-within-Web-Page-Background-Color.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.adminbutton
+{
+	margin: auto;
+	height: 30%;
+	width: 70vw;
+	font-size: 400%;
+	background-color: rgba(20%, 20%, 20%, 80%);
+	border-radius: 30px;
+}
+
+#readout
+{
+	margin: auto;
+}
+
+.article
+{
+	color: lightgray;
+	display: flex;
+	flex-direction: row;
+	border-radius: 10px;
+	width: 350px;
+	padding: 7px;
+	background-color: rgba(20%, 20%, 20%, 80%);
+}
+
+.display
+{
+	margin-right: auto;
+	max-width: 200px;
+	height: 200px;
+}
+
+#list
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	/*grid-template-columns: 1fr 1fr 1fr;*/
+	width: 80%;
+	grid-column-gap: 20px;
+	margin-left: 4%;
+	margin-right: auto;
+}
+
+#RightBar
+{
+	width: 10%;
+	min-width: 100px;
+	position: fixed;
+	top: 30px;
+	height: 100%;
+	right: 0px;
+	background-color: rgba(20%, 20%, 20%, 80%);
+	flex-direction: column;
+	z-index: 1;
+}
+
+#cartdiv
+{
+	display: flex;
+	flex-direction: row;
+	padding: auto;
+	color: white;
+}
+
+.buy
+{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0px;
+}
+
+.buy > button
+{
+	background-color: rgba(20%, 20%, 30%, 0%);
+	border: 0px;
+	margin: auto;
+	margin-top: 5px;
+	color: white;
+	border-radius: 3px;
+}
+
+.buy > button:hover
+{
+	background-color: rgba(0%, 0%, 0%, 40%);
+}
+
+.discription
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: 0;
+	width: 140px;
+	height: 200px;
+}
+
+.desc
+{
+	margin-bottom: auto;
+}
+
+.price
+{
+	margin-bottom: 0px;
+}
+
+.categories
+{
+	max-height: 100px;
+}

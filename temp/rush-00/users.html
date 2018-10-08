@@ -1,0 +1,22 @@
+
+<form method="post" action="./index.php" style="margin: auto;">
+	<h3>New:</h3>
+	Login: <input name="login">
+	Password: <input name="passwd">
+	<button type="submit" name="action" value="add">Add</button>
+</form>
+<div id="readout">
+	<h3>Users:</h3>
+	<?php
+		foreach ($users as $login => $passwd)
+		{
+			echo '<form method="post" action="./index.php">
+					Login: <input class="readoutelem" name="login" value="'.$login.'">
+					<input name="og" value="'.$login.'" style="display: none;">
+					Hashed pw: <input class="readoutelem" name="passwd" value="'.$passwd.'">
+					<button class="readoutelem" type="submit" name="action" value="add">Modify</button>
+					<button class="readoutelem" type="submit" name="action" value="del">del</button>
+				</form>';
+		}
+	?>
+</div>

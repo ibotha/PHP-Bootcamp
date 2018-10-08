@@ -1,0 +1,19 @@
+<form method="post" action="#" style="margin: auto;">
+	<h3>New:</h3>
+	Category: <input name="cat">
+	<button type="submit" name="action" value="add">Add</button>
+</form>
+<div id="readout">
+	<h3>Categories:</h3>
+	<?php
+		foreach ($cats as $cat)
+		{
+			echo '<form method="post" action="#">
+					Category: <input class="readoutelem" name="cat" value="'.$cat.'">
+					<input class="readoutelem" name="og" value="'.$cat.'" style="display: none">
+					<button class="readoutelem" type="submit" name="action" value="add">Modify</button>
+					<button class="readoutelem" type="submit" name="action" value="del">del</button>
+				</form>';
+		}
+	?>
+</div>

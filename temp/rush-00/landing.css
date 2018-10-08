@@ -1,0 +1,82 @@
+.SlideShowContainer {
+	width: 60%;
+	height: 32vw;
+	margin: auto;
+	margin-top: 40px;
+	background-color: grey;
+}
+
+.Slides {
+	display: none;
+}
+
+.Prev:hover, .Next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.Text {
+	color: #222222;
+	font-size: 20px;
+	padding: 8px 12px;
+	font-family: cursive;
+	width: 100%;
+	text-align: center;
+}
+
+.NumberText {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin-top: 4px;
+	margin-left: 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+	.active, .dot:hover {
+		background-color: #717171;
+	}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+h1
+{
+	margin-top: 80px;
+	text-align: center;
+	font-size: 400%;
+}
