@@ -1,0 +1,39 @@
+The vector class handles Vectors in 3d space.
+
+An instance can be contructed from an array of distinct key-value pairs:
+new Vertex( array( 'x' => 1.00, 'y' => 2.40, 'z' => 2.40, 'w' => 2.40 ));
+
+Each of thes values also have one function named:
+
+get_v()
+
+Where 'v' is the variable name, that wil get the desired value.
+
+vec->get_x();
+
+defaults:
+x, y, z, w:	0
+
+any values
+
+x, y, z, w constitutives are converted to floats.
+Any other use is undefined behaviour.
+
+The class provides the following methods :
+
+Vector   add( Vector $rhs );
+Adds each color constitutive and returns a new Vector instance.
+
+Vector   sub( Vector $rhs );
+Substracts each color constitutive and returns a new Vector instance.
+
+Vector   mult( $f );
+Multiplies each color constitutive by factor $f and returns a new Vector
+instance.
+
+float    magnitude ();
+returns the total length of the vector.
+
+Vector   normalize ();
+returns a new vector of length 1 that points in the same direction as
+the original

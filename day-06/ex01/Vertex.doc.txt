@@ -1,0 +1,37 @@
+The Color class handles Verteces in 3d space.
+
+An instance can be contructed from an array of distinct key-value pairs:
+new Vertex( array( 'x' => 1.00, 'y' => 2.40, 'z' => 2.40, 'w' => 2.40 , 'color' => new Color ( array ('red' => 20, 'green' => 40, 'blue' => 50))));
+
+Each of thes values also have two functions named:
+
+get_v()
+and
+set_v()
+
+Where 'v' is the variable name, that get and set the value respectively.
+
+vert->get_x();
+vert->set_x(2.5);
+
+defaults:
+x, y, z:	0
+w:			1
+color:		(0, 0, 0)
+
+any values
+
+x, y, z, w constitutives are converted to floats.
+Any other use is undefined behaviour.
+
+The class provides the following methods :
+
+Vertex   add( Vertex $rhs );
+Adds each color constitutive and returns a new Vertex instance.
+
+Vertex   sub( Vertex $rhs );
+Substracts each color constitutive and returns a new Vertex instance.
+
+Vertex   mult( $f );
+Multiplies each color constitutive by factor $f and returns a new Vertex
+instance.

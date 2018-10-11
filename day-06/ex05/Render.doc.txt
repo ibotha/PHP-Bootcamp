@@ -1,0 +1,16 @@
+The Render class manages the rasterization of verteces.
+
+The Render is constructed with three values
+
+$mat = new Matrix( $width, $height, $filename );
+
+where width and height are the the image width and height and the filename is
+the desired fale save location.
+
+Methods.
+
+void	renderMesh(array $mesh) draws an array of triangles to the buffer.
+
+void	renderVertex(array $mesh) draws a Vertex to the buffer.
+
+void	develop() saves the buffer to the filename set during construction.

@@ -1,0 +1,30 @@
+The Camara class manages the rasterization pipeline from world->NDC
+
+The Camera constructor requires an array with these key-value pairs
+$cam  = new Camera( array( 'origin' => $vert,
+						   'orientation' => $R,
+						   'width' => 640,
+						   'height' => 480,
+						   'fov' => 60,
+						   'near' => 1.0,
+						   'far' => 100.0) );
+where 'origin' is a vertex and 'orientation' is a matrix that represents the
+rotation of the Camera, 'width' and 'height' are the viewports width and height
+respectively. 'fov' is the desired field of fiew and the near and far planes are
+defined by the 'near' and 'far' fields respectively.
+
+Methods
+
+Vertex watchVertex(Vertex $v);
+converts a vector into NDC space and Returns a new Vector.
+
+setOrigin(Vertex $o);
+resets the camera's origin to 'o' Returns nothing;
+
+setRotation(Matrix $R);
+resets the camera's Rotation matrix to 'R' Returns nothing;
+
+setProjection( array(	'width' => 640, 'height' => 480, 'fov' => 60,
+'near' => 1.0, 'far' => 100.0));
+creates a new projection matrix for the camera
+(see constructor for value alignments). Returns nothing;

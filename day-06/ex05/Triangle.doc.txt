@@ -1,0 +1,5 @@
+The Triangle class is a collection of the vertexes.
+
+The Triangle is constructed with three triangles
+
+$mat = new Matrix( $a, $b, $c );

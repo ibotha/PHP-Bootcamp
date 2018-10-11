@@ -1,0 +1,53 @@
+The matrix class handles transformations in 3d space.
+
+The Matrix is constructed with a preset and aligned values
+
+$mat = new Matrix( array( 'preset' => Matrix::IDENTITY ) );
+The Identity matrix. This matrix is the default case if no preset is given.
+
+====
+
+$mat = new Matrix( array( 'preset' => Matrix::TRANSLATION, 'vtc' => VECTOR ) );
+This preset performs a translation operation on a vertex. It takes a 
+Vector under the key 'vtc' which dictates the direction and magnitude of
+translation.
+
+====
+
+$mat = new Matrix( array( 'preset' => Matrix::SCALE 'scale' => 3) );
+This Preset scales an object by a float value in all directions.
+
+====
+
+$mat = new Matrix( array( 'preset' => Matrix::{RX | RY | RZ} 'angle' => M_PI_2 ) );
+This is a set of three presets: RX, RY or RZ. These matrices will rotate about
+the x, y and z axis respectively. a float 'angle' dictates the amount of rotation
+in radians.
+
+====
+
+$mat = new Matrix( array( 'preset' => Matrix::PROJECTION 
+						'fov' => 60,
+						'ratio' => 640/480,
+						'near' => 1.0,
+						'far' => -50.0 ) );
+This preset forms a projection matrix out of a field of view (fov), an aspect
+ratio [width / height] (ratio), a near clipping plane (near) and a far
+clipping plane (far)
+
+If the aligned values are not provided in the array then behavior is undefined.
+
+Methods:
+
+float	get(int $x, int $y);
+gets the value from x,y in the matrix. Returns a float.
+
+
+		set(int $x, int $y, float $v);
+sets the value v at x,y in the matrix. Returns nothing.
+
+Matrix	mult(Matrix $m);
+mutiplies this and m together, Returns a new Matrix with the result.
+
+Vertex	transfomVertex(Vertex $v);
+Transforms the vertex by the matrix and returns a new Vertex with the result.
