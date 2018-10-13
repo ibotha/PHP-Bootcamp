@@ -1,0 +1,41 @@
+body
+{
+	margin: 0px;
+}
+
+.board
+{
+	background-size: 100%;
+	background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/N69pMl5/stars-rotating-north-pole-star-night-sky-polaris-time-lapse_hglvfkca_thumbnail-full01.png);
+	display: grid;
+	background-position: static;
+	grid-template-columns: repeat(150, 13px);
+	grid-template-rows: repeat(100, 13px);
+	width: calc(150 * 13px);
+	padding-bottom: 20vh;
+	border-right: 1px solid grey;
+	border-bottom: 1px solid grey;
+}
+
+.box
+{
+	border: 0;
+	border-left: 1px solid grey;
+	border-top: 1px solid grey;
+	background-color: transparent;
+	margin: 0;
+}
+
+.actionbar
+{
+	z-index: 2;
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	height: 20vh;
+	background-size: 100%;
+	background-image: url("https://png.pngtree.com/thumb_back/fh260/back_pic/03/91/49/7957dfe637bc33d.jpg");
+}

@@ -1,0 +1,23 @@
+The Piece class is an abstract class for game pieces
+
+__construct($width, $height, $x, $y, $health)
+
+Any child of the Piece class will Throw an exception if it is constructed with 
+the given position is off screen or if the health of the piece is less than 1
+
+methods
+
+getHealth();
+returns the health
+
+setHealth(int $i);
+sets the health ti 'i'
+
+__get(string $name)
+returns the member with the name 'name'
+options are:
+_width;
+_height;
+_health;
+_x;
+_y;

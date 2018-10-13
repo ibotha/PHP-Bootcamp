@@ -1,0 +1,12 @@
+The obstruction class is a non movable game piece : inherates from Piece
+
+it needs these values for construction
+
+new Obstruction($width, $height, $x, $y, $health);
+
+where x and y are it's starting coordinates, health is it's initial health and
+width and height are it's width and height
+
+Methods
+
+none

@@ -1,0 +1,26 @@
+The Player class is a collection of Obstruction types pieces. implements
+Party interface.
+
+it needs no values for construction
+
+new Player();
+
+where x and y are it's starting coordinates, health is it's initial health and
+width and height are it's width and height
+
+Methods
+
+addPiece($key, $Piece)
+adds 'Piece' to Player with the key 'key';
+
+printActive($Cur);
+places all elements on screen as clickables with element[$cur] highlighted;
+
+printPassive($Cur);
+places all elements on screen as non-clickables with element[$cur] highlighted;
+
+hit($target)
+deals 1 damage to element[$target] and unsets it if it dies;
+
+getShip($key)
+returns the ship with 'key' as it's key;

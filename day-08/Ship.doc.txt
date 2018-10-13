@@ -1,0 +1,29 @@
+The Ship class is a movable game piece that can attack : Inherits from Piece
+
+it needs these values for construction
+
+new Ship($width, $height, $x, $y, $health, $name, $pp, $speed);
+
+where x and y are it's starting coordinates, health is it's initial health and
+width and height are it's width and height
+
+Methods
+
+allocPP(int $s, int $m, int $w);
+allocates the power points of the ship with these values.
+
+Bool canMove(int $x, int $y);
+checks if the piece has enough range to move to this block. returns true/false.
+
+move(int $x, int $y);
+checks if the ship can move and moves if it can.
+
+====
+
+getters:
+
+function getName();
+function getPP();
+function getShield();
+function getMovement();
+function getWeapon();

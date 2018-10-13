@@ -1,0 +1,35 @@
+This is the board. It holds all of the players and manages turn events
+
+No input is required for the boards construction.
+
+Methods
+
+the invoke metthod will echo the board to the screen
+
+nextTurn();
+will advance the game by a turn;
+
+int getTurn();
+will return the current player number
+
+nextPhase();
+will advance the game by a Phase and advane the turn if pahses are complete;
+
+int getPhase();
+will return the current phase number
+
+int getStrPhase();
+will return the current phase as a str
+
+nextShip();
+will advance the game to the next ship and advance the phase when no ships
+are left;
+
+int getShip();
+will return the current ship
+
+moveShip(int $x, int $y);
+will move the current ship to the desired coordinates if it is a valid move
+
+attack(int $target);
+will check dice rolls and deal damage to target ship index
