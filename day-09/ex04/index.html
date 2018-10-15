@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="    crossorigin="anonymous"></script>
+	<script src="todo.js"></script>
+	<style>
+		body{
+			background-color: rgb(241, 240, 212);
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+		}
+
+		h1{
+			font-size: 80px;
+			text-align: center;
+			font-family: cursive;
+			margin: 1px;
+		}
+
+		#ft_list{
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		a{
+			font-size: 30px;
+			font-family: cursive;
+			margin: 1px;
+			text-align: center;
+			text-decoration: underline;
+		}
+		#item{
+			margin-left: calc(50% - 100px);
+			margin-bottom: auto;
+			width: 200px;
+			border: 0;
+		}
+		#addbutton{
+			margin-left: calc(50% - 100px);
+			margin-bottom: auto;
+			text-align: center;
+			padding-top: 10px;
+			border: 0;
+			width: 200px;
+			height: 30px;
+			background-color: rgba(121, 121, 121, 0.096);
+		}
+		#addbutton :click{
+			background-color: rgba(121, 121, 121, 0.296);
+		}
+	</style>
+</head>
+<body>
+	<H1>To Do:</H1>
+	<div id="ft_list">
+	</div>
+	<form>
+		<input id="item">
+		<div id="addbutton">New</div>
+	</form>
+</body>
+</html>

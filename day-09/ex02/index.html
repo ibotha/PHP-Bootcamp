@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo</title>
+	<script src="todo.js"></script>
+	<style>
+		body{
+			background-color: rgb(241, 240, 212);
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+		}
+
+		h1{
+			font-size: 80px;
+			text-align: center;
+			font-family: cursive;
+			margin: 1px;
+		}
+
+		#ft_list{
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		a{
+			font-size: 30px;
+			font-family: cursive;
+			margin: 1px;
+			text-align: center;
+			text-decoration: underline;
+		}
+		#item{
+			margin-left: calc(50% - 100px);
+			margin-bottom: auto;
+			width: 200px;
+			border: 0;
+		}
+		#addbutton{
+			margin-left: calc(50% - 100px);
+			margin-bottom: auto;
+			border: 0;
+			width: 200px;
+			height: 30px;
+			background-color: rgba(121, 121, 121, 0.096);
+		}
+	</style>
+</head>
+<body>
+	<H1>To Do:</H1>
+	<div id="ft_list">
+	</div>
+	<form>
+		<input id="item">
+		<button type="submit" id="addbutton">New</button>
+	</form>
+</body>
+</html>
